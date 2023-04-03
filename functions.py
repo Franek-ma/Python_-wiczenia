@@ -6,8 +6,11 @@ def positive_numbers(liczby):
 
 def divided_numbers(liczby):
     for nu in liczby:
-        divided_number_list = nu / 5
-        print(divided_number_list)
+        # divided_number_list = nu / 5
+        divided_number_list = []
+        if nu % 5 == 0 :
+            divided_number_list.append(nu)
+            print(divided_number_list)
 
 def new_postive_numbers_list(liczby):
     for nu in liczby:
