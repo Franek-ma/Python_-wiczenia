@@ -17,11 +17,17 @@ divided_numbers(liczby)
 print("Nowa lista z liczbami mniejszymi od zera : ")
 new_postive_numbers_list(liczby)
 
-print("funkcję która wydrukuje element z podanego klucza : ")
-key_counter(slow)
+#print("funkcję która wydrukuje element z podanego klucza : ")
+#key_counter(slow)
 
 # Super Fanciszek !!!
 # zrobiłem małą modyfikcję w zadaniu  -  "funkcja która drukuje liczby z listy podzielne przez 5"
 # raz tylko wspominałem o modulo ( % ) na lekcjach , to byo poza kursem kodland , mogłeś nie wiedzieć :) czasem się przydaje
 # jutro omówimy po krótce ....i zaczynamy obiekty 
- 
+print("funkacja zwracająca wartości ze zsłownika ")
+print(return_value(4,slow))
+
+klucz = 4
+
+if False:
+    print(return_value(klucz,slow))
