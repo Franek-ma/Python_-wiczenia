@@ -34,10 +34,23 @@ print(fra.get_name())
 # funkcja która zwraca każe z tych wartośći 
 # koniecznie def __init__
 
+nazwa = "zakupy"
+data = "05.04.2023 r."
+godzina = "15:32"
+rabat = "800 punktów"
+
+class Zakupy:
+
+    def __init__(self,nazwa,data,godzina,rabat):
+        self.nazwa = nazwa
+        self.data = data
+        self.godzina = godzina
+        self.rabat = rabat
+        
+
+def get_Zakupy (self):
+    return self
 
 
-
-
-
-
+print(get_Zakupy(nazwa))
 
