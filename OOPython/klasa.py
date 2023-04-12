@@ -49,7 +49,7 @@ class Zakupy:
         self.rabat = rabat
         
     def get_zakupy(self):
-        return self.nazwa + self.data + self.godzina + str(self.rabat) + "%"
+        return self.nazwa +"  "+ self.data +"  "+ self.godzina +"  "+ str(self.rabat) + "%"
 
 
 
@@ -61,7 +61,11 @@ def get_Zakupy (self):
 
 biedronka1 = Zakupy("biedronka","12.04","18:00",15)
 
+biedronka2 = Zakupy("biedronka","19.9","18:45",15)
+
 print(biedronka1.get_zakupy())
+
+print(biedronka2.get_zakupy())
 
 
 
