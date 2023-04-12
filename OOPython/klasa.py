@@ -23,7 +23,8 @@ fra = Uczen("Franciszek", "Malkowski", 13)
 # luk.surname = "Sywalker"
 
 
-print(fra.get_name())
+
+#print(fra.get_name())
 
 
 # stworzyć klasę zakupy - kalendarz 
@@ -47,10 +48,21 @@ class Zakupy:
         self.godzina = godzina
         self.rabat = rabat
         
+    def get_zakupy(self):
+        return self.nazwa + self.data + self.godzina + str(self.rabat) + "%"
+
+
 
 def get_Zakupy (self):
     return self
 
 
-print(get_Zakupy(nazwa))
+# print(get_Zakupy(nazwa))
+
+biedronka1 = Zakupy("biedronka","12.04","18:00",15)
+
+print(biedronka1.get_zakupy())
+
+
+
 
