@@ -32,4 +32,40 @@ kauf1.add_product("mleko")
 
 print(kauf1.get_products())
 
+class products:
+
+    def __init__(self,nazwa,cena):
+
+        self.nazwa = nazwa
+        self.cena = cena
+
+    def add_product(self,product):
+        self.koszyk.append(product)
+
+    def get_products(self):
+        return self.koszyk
+
+    
+class products:
+
+    def __init__(self,nazwa,cena):
+
+        self.nazwa = nazwa
+        self.cena = cena
+
+    def get_price(self,cena):
+        return self.cena
+    
+    def get_name(self,nazwa):
+        return self.nazwa
+
+products = products("test",16)
+
+products.get_name("jajka")
+
+products.get_price(5.00)
+
+print(products.get_name("test"))
+
+print(products.get_price(16))
 
