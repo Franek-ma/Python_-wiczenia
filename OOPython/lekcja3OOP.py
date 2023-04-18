@@ -22,6 +22,20 @@ class Zakupy:
 
     def zakoncz():
         pass
+
+    def get_name_products(self):
+        names = []
+        for name in self.koszyk:
+            names.append(name.get_name())    
+        return names
+    
+    def get_total_price(self):
+        total_price = 0
+        for price in self.koszyk:
+            total_price += price.get_price()
+        return "wartość koszyka: " + str(total_price)
+
+            
     
 class Product:
 
@@ -44,3 +58,15 @@ pomidory = Product("malinowe", 20)
 
 pomidory2 = Product("jakbłkowe", 45)
 
+zakupy_dzis = Zakupy("zakupy",20)
+
+zakupy_dzis.add_product(jajka)
+zakupy_dzis.add_product(chleb)
+zakupy_dzis.add_product(pomidory)
+zakupy_dzis.add_product(pomidory2)
+
+print(zakupy_dzis.get_name_products())
+
+print(zakupy_dzis.get_total_price())
+
+#Stworzyć dodatkową funkcję w klasie Zakupy, która listuje produkty nazwa paragon
