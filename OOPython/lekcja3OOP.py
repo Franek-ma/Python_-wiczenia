@@ -22,29 +22,6 @@ class Zakupy:
 
     def zakoncz():
         pass
-
-
-kauf1 = Zakupy("zakupy świąteczne",16)
-
-kauf1.add_product("jajka")
-kauf1.add_product("mąka")
-kauf1.add_product("mleko")
-
-print(kauf1.get_products())
-
-# class products:
-
-#     def __init__(self,nazwa,cena):
-
-#         self.nazwa = nazwa
-#         self.cena = cena
-
-#     def add_product(self,product):
-#         self.koszyk.append(product)
-
-#     def get_products(self):
-#         return self.koszyk
-
     
 class Product:
 
@@ -66,8 +43,4 @@ chleb = Product("chleb smaczny ", 10)
 pomidory = Product("malinowe", 20)
 
 pomidory2 = Product("jakbłkowe", 45)
-
-print(jajka.get_price())
-print(pomidory.get_price())
-
 
