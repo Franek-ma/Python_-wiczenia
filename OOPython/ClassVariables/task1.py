@@ -49,9 +49,19 @@ print(Bron.number_of_wepons)
 
 print(Shotgun.shotgun_nuber)
 
-#Stworzyć klasę Firma w tej klasie muśi być spis użadzeń
+#Stworzyć klasę Firma w tej klasie muśi być spis urzadzeń - lista 
 
 #Napisać Klasę urządzenie mają być dodawane do listy w Firmie
 
 #Trzy klasy dziedziczące po klasie urządzenia: It, pojazdy, maszyny rolnicze
+
+# rozrnic pajazdy na klasach 
+# - samochody 
+# - traktory 
+# - rowery 
+
+# Zliczyc za pomoc Class variables wszystkie pojazdy , 
+# ale te zliczyc oddzilenie rowery , traktory samochody  
+
+
 
