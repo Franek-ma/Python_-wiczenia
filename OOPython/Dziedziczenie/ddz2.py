@@ -42,3 +42,5 @@ print(m4a1.recoil)
 
 print(m870.fire_mode)
 
+# Brawo Franciszku ! O to chodzio ..
+
