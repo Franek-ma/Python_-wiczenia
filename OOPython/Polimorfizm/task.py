@@ -12,12 +12,12 @@ class Firma:
         self.nazwa = nazwa
         self.urzadzenia = []
 
-def dodaj_urzadzenie(self, urzadzenie):
+    def dodaj_urzadzenie(self, urzadzenie):
         self.urzadzenia.append(urzadzenie)
 
-def wylistuj_urzadzenia(self):
+    def wylistuj_urzadzenia(self):
         for urzadzenie in self.urzadzenia:
-            print(urzadzenie.opis())
+            print(urzadzenie.funkcja_urzadzenia())
 
 class Urzadzenie(ABC):
     @abstractmethod
