@@ -7,18 +7,6 @@
 # firma ma metode , zeby wylistowac jakie mamy urzadzenia i co robia 
 from abc import ABC, abstractmethod
 
-class Firma:
-    def __init__(self, nazwa):
-        self.nazwa = nazwa
-        self.urzadzenia = []
-
-    def dodaj_urzadzenie(self, urzadzenie):
-        self.urzadzenia.append(urzadzenie)
-
-    def wylistuj_urzadzenia(self):
-        for urzadzenie in self.urzadzenia:
-            print(urzadzenie.funkcja_urzadzenia())
-
 class Urzadzenie(ABC):
     @abstractmethod
     def funkcja_urzadzenia(self):
@@ -35,13 +23,32 @@ class Samochod(Urzadzenie):
 class Traktor(Urzadzenie):
     def funkcja_urzadzenia(self):
         return "Stoję i się kurzę ..."
+
+
+
+class Firma:
+    def __init__(self, nazwa):
+        self.nazwa = nazwa
+        self.urzadzenia = []
+
+    def dodaj_urzadzenie(self, urzadzenie):
+        self.urzadzenia.append(urzadzenie)
+
+    def wylistuj_urzadzenia(self):
+        for urzadzenie in self.urzadzenia:
+            print(urzadzenie.funkcja_urzadzenia())
+
+
     
 komputer = Komputer()
 samochod = Samochod()
 traktor = Traktor()
 
+#inny = 1212
+
 moja_firma = Firma("Moja Firma")
 
+#moja_firma.dodaj_urzadzenie(inny)
 moja_firma.dodaj_urzadzenie(komputer)
 moja_firma.dodaj_urzadzenie(samochod)
 moja_firma.dodaj_urzadzenie(traktor)
