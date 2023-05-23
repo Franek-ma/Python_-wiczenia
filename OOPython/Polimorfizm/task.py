@@ -47,4 +47,3 @@ moja_firma.dodaj_urzadzenie(samochod)
 moja_firma.dodaj_urzadzenie(traktor)
 
 moja_firma.wylistuj_urzadzenia()
-    
