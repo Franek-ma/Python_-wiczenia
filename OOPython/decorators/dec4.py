@@ -1,0 +1,1 @@
+#funkcja randowa, która generuje listę 100 liczb od 1 do 1000 i zwraca listę. dekolator bieże tylko liczby większe od 500
